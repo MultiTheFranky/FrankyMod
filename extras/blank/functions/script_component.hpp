@@ -1,1 +1,1 @@
-#include "\z\proj_templ\addons\blank\script_component.hpp"
+#include "\z\fr4\addons\blank\script_component.hpp"
