@@ -4,10 +4,7 @@
     "excludeList": [
         "initsettings.sqf",
         "initkeybinds.sqf",
-        "xeh_prep.sqf",
-        "\\dev\\",
-        "medical_ai\\statemachine.sqf",
-        "common\\functions\\fnc_dummy.sqf"
+        "xeh_prep.sqf"
     ],
     "outputDir": "P:/",
     "workerThreads": 12
