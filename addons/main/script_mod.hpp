@@ -18,3 +18,6 @@
 #else
     #define COMPONENT_NAME QUOTE(fr4 - COMPONENT)
 #endif
+
+#define REQUIRED_CBA_VERSION { 3, 5, 0 }
+#define REQUIRED_ACE_VERSION { 3, 11, 0 }

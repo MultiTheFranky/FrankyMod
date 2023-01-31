@@ -7,5 +7,5 @@
         "xeh_prep.sqf"
     ],
     "outputDir": "P:/",
-    "workerThreads": 12
+    "workerThreads": 1
 }
