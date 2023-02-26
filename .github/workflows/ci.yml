@@ -13,4 +13,4 @@ jobs:
     - name: Build with HEMTT
       id: build
       run: |
-        hemtt build
+        ./hemtt build
