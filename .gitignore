@@ -22,3 +22,4 @@ ArmaScriptCompiler.exe
 keys/*
 .hemtt/local
 .hemttout
+releases/*
