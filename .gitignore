@@ -5,8 +5,6 @@ releases/*
 extensions/vcproj32/*
 extensions/vcproj64/*
 .vscode/*
-hemtt
-hemtt.exe
 tools/temp
 *.cache
 *.pbo
