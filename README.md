@@ -12,6 +12,13 @@
     <a href="https://github.com/MultiTheFranky/FrankyMod/releases">
         <img src="https://img.shields.io/github/downloads/MultiTheFranky/FrankyMod/total.svg?style=flat-square&label=Downloads" alt="FrankyMod Downloads">
     </a>
+    <a href="https://github.com/MultiTheFranky/FrankyMod/actions/workflows/ci.yml">
+        <img src="https://github.com/MultiTheFranky/FrankyMod/actions/workflows/ci.yml/badge.svg" alt="CI">
+    </a>
+    <a href="https://github.com/MultiTheFranky/FrankyMod/actions/workflows/release.yml">
+        <img src="https://github.com/MultiTheFranky/FrankyMod/actions/workflows/release.yml/badge.svg" alt="Release">
+    </a>
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/MultiTheFranky/FrankyMod">
 </p>
 
 <p align="center">
