@@ -1,0 +1,33 @@
+name = "FR4"
+prefix = "fr4"
+author = "Franky"
+
+[files]
+include = [
+    "*.dll",
+    "*.so",
+    "mod.cpp",
+    "README.md",
+    "docs/README_*.md",
+    "AUTHORS.txt",
+    "LICENSE",
+    "logo_fr4_ca.paa",
+    "meta.cpp",
+]
+
+[version]
+git_hash = 0
+
+[properties]
+version = "{{git \"id 8\"}}"
+
+[asc]
+enabled = true
+exclude = [
+    "/initsettings.sqf",
+    "/initkeybinds.sqf",
+    "/xeh_prep.sqf",
+    "dev",
+    "medical_ai/statemachine.sqf",
+    "common/functions/fnc_dummy.sqf",
+]
