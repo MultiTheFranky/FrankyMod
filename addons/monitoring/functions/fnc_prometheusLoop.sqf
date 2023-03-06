@@ -23,7 +23,7 @@ private _dataToWrite = [
   [format ["fr4_%1_players", _serverName], "Number of players", count allplayers] joinstring ":",
   [format ["fr4_%1_server_fps", _serverName], "Server FPS", floor diag_fps] joinstring ":",
   [format ["fr4_%1_ai", _serverName], "Number of AI", {
-    !isPlayer _xindentationToSpaces 
+    !isPlayer _x
   } count allunits] joinstring ":",
   [format ["fr4_%1_objects", _serverName], "Number of objects", count allMissionObjects "All"] joinstring ":",
   [format ["fr4_%1_blufor", _serverName], "Number of units blufor", blufor countSide allUnits] joinstring ":",

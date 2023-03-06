@@ -1,8 +1,0 @@
-V1.0 {
-    global: _init; _fini;
-        RVExtensionRegisterCallback;
-        RVExtension;
-        RVExtensionArgs;
-        RVExtensionVersion;
-    local: *;
-};
