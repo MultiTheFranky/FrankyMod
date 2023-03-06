@@ -30,4 +30,3 @@ if (!isServer) exitWith {};
 
 	[FUNC(prometheusLoop), [], 5] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_addEventHandler;
-
