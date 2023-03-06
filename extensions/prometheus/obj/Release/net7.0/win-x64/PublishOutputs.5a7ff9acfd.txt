@@ -1,0 +1,2 @@
+C:\Users\Francisco\Documents\Arma3Projects\z\fr4\extensions\prometheus\bin\Release\net7.0\win-x64\publish\prometheus_x64.dll
+C:\Users\Francisco\Documents\Arma3Projects\z\fr4\extensions\prometheus\bin\Release\net7.0\win-x64\publish\prometheus_x64.pdb

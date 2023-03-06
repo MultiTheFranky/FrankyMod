@@ -1,1 +1,1 @@
-PREP(empty);
+PREP(minifyString);
