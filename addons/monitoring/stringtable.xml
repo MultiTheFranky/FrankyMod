@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="FR4">
     <Package name="Monitoring">
-        <Key ID="STR_FR4_Monitoring_enable_DisplayName">
-            <English>Enable</English>
-            <Polish>Enable</Polish>
-            <Italian>Enable</Italian>
-            <Russian>Enable</Russian>
-            <French>Enable</French>
-            <Spanish>Enable</Spanish>
+        <Key ID="STR_FR4_Monitoring_enabled_DisplayName">
+            <English>Enabled</English>
+            <Polish>Enabled</Polish>
+            <Italian>Enabled</Italian>
+            <Russian>Enabled</Russian>
+            <French>Enabled</French>
+            <Spanish>Enabled</Spanish>
             <German>
-                Enable</German>
-            <Hungarian>Enable</Hungarian>
-            <Czech>Enable</Czech>
-            <Portuguese>Enable</Portuguese>
-            <Japanese>Enable</Japanese>
+                Enabled</German>
+            <Hungarian>Enabled</Hungarian>
+            <Czech>Enabled</Czech>
+            <Portuguese>Enabled</Portuguese>
+            <Japanese>Enabled</Japanese>
             <Korean>
-                Enable</Korean>
-            <Chinese>Enable</Chinese>
-            <Chinesesimp>Enable</Chinesesimp>
-            <Turkish>Enable</Turkish>
+                Enabled</Korean>
+            <Chinese>Enabled</Chinese>
+            <Chinesesimp>Enabled</Chinesesimp>
+            <Turkish>Enabled</Turkish>
         </Key>
-        <Key ID="STR_FR4_Monitoring_enable_Description">
-            <English>Enable
+        <Key ID="STR_FR4_Monitoring_enabled_Description">
+            <English>Enabled
                 Description</English>
-            <Polish>Enable Description</Polish>
-            <Italian>Enable Description</Italian>
-            <Russian>Enable
+            <Polish>Enabled Description</Polish>
+            <Italian>Enabled Description</Italian>
+            <Russian>Enabled
                 Description</Russian>
-            <French>Enable Description</French>
-            <Spanish>Enable Description</Spanish>
-            <German>Enable
+            <French>Enabled Description</French>
+            <Spanish>Enabled Description</Spanish>
+            <German>Enabled
                 Description</German>
-            <Hungarian>Enable Description</Hungarian>
-            <Czech>Enable Description</Czech>
-            <Portuguese>Enable
+            <Hungarian>Enabled Description</Hungarian>
+            <Czech>Enabled Description</Czech>
+            <Portuguese>Enabled
                 Description</Portuguese>
-            <Japanese>Enable Description</Japanese>
-            <Korean>Enable Description</Korean>
-            <Chinese>Enable
+            <Japanese>Enabled Description</Japanese>
+            <Korean>Enabled Description</Korean>
+            <Chinese>Enabled
                 Description</Chinese>
-            <Chinesesimp>Enable Description</Chinesesimp>
-            <Turkish>Enable Description</Turkish>
+            <Chinesesimp>Enabled Description</Chinesesimp>
+            <Turkish>Enabled Description</Turkish>
         </Key>
         <Key ID="STR_FR4_Monitoring_endpoint_DisplayName">
             <English>
