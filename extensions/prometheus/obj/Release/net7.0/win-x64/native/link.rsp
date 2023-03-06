@@ -1,4 +1,4 @@
-﻿"obj\Release\net7.0\win-x64\native\prometheus_x64.obj"
+"obj\Release\net7.0\win-x64\native\prometheus_x64.obj"
 /OUT:"bin\Release\net7.0\win-x64\native\prometheus_x64.dll"
 /DEF:"obj\Release\net7.0\win-x64\native\prometheus_x64.def"
 /LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\ATLMFC\lib\x64"
