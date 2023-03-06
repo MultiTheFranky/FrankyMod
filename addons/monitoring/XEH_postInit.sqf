@@ -24,10 +24,10 @@ if (!isServer) exitWith {};
 		if (isPlayer _killer) then {
 			private _killerName = (name _killer) call EFUNC(common, minifyString);
 			missionNamespace setVariable [format ["fr4_kill_%1", _killerName], (missionNamespace getVariable [format ["fr4_kill_%1", _killerName], 0]) + 1];
-			[_killerName, missionNamespace getVariable [format ["st41_kill_%1", _killerName], 0]] call FUNC(logKill);
+			[_killerName, missionNamespace getVariable [format ["fr4_kill_%1", _killerName], 0]] call FUNC(logKill);
 		};
 	}];
-	
+
 	[FUNC(prometheusLoop), [], 5] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_addEventHandler;
 
