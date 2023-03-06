@@ -17,7 +17,7 @@
 
 if (!isServer) exitWith {};
 
-private _serverName = serverName call EFUNC(common, minifyString);
+private _serverName = serverName call EFUNC(common,minifyString);
 
 private _dataToWrite = [
   [format ["fr4_%1_players", _serverName], "Number of players", count allplayers] joinstring ":",
