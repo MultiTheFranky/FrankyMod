@@ -1,0 +1,2 @@
+/mnt/c/Users/Francisco/Documents/Arma3Projects/ExternalSource/fr4/extensions/prometheus/bin/Release/net7.0/linux-x64/publish/prometheus_x64.so
+/mnt/c/Users/Francisco/Documents/Arma3Projects/ExternalSource/fr4/extensions/prometheus/bin/Release/net7.0/linux-x64/publish/prometheus_x64.pdb

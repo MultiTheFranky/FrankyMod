@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="FR4">
+    <Package name="Monitoring">
+        <Key ID="STR_FR4_Monitoring_enable_DisplayName">
+            <English>Enable</English>
+            <Polish>Enable</Polish>
+            <Italian>Enable</Italian>
+            <Russian>Enable</Russian>
+            <French>Enable</French>
+            <Spanish>Enable</Spanish>
+            <German>
+                Enable</German>
+            <Hungarian>Enable</Hungarian>
+            <Czech>Enable</Czech>
+            <Portuguese>Enable</Portuguese>
+            <Japanese>Enable</Japanese>
+            <Korean>
+                Enable</Korean>
+            <Chinese>Enable</Chinese>
+            <Chinesesimp>Enable</Chinesesimp>
+            <Turkish>Enable</Turkish>
+        </Key>
+        <Key ID="STR_FR4_Monitoring_enable_Description">
+            <English>Enable
+                Description</English>
+            <Polish>Enable Description</Polish>
+            <Italian>Enable Description</Italian>
+            <Russian>Enable
+                Description</Russian>
+            <French>Enable Description</French>
+            <Spanish>Enable Description</Spanish>
+            <German>Enable
+                Description</German>
+            <Hungarian>Enable Description</Hungarian>
+            <Czech>Enable Description</Czech>
+            <Portuguese>Enable
+                Description</Portuguese>
+            <Japanese>Enable Description</Japanese>
+            <Korean>Enable Description</Korean>
+            <Chinese>Enable
+                Description</Chinese>
+            <Chinesesimp>Enable Description</Chinesesimp>
+            <Turkish>Enable Description</Turkish>
+        </Key>
+        <Key ID="STR_FR4_Monitoring_endpoint_DisplayName">
+            <English>
+                Endpoint</English>
+            <Polish>Endpoint</Polish>
+            <Italian>
+                Endpoint</Italian>
+            <Russian>Endpoint</Russian>
+            <French>Endpoint</French>
+            <Spanish>Endpoint</Spanish>
+            <German>
+                Endpoint</German>
+            <Hungarian>Endpoint</Hungarian>
+            <Czech>Endpoint</Czech>
+            <Portuguese>Endpoint</Portuguese>
+            <Japanese>Endpoint</Japanese>
+            <Korean>
+                Endpoint</Korean>
+            <Chinese>Endpoint</Chinese>
+            <Chinesesimp>Endpoint</Chinesesimp>
+            <Turkish>Endpoint</Turkish>
+        </Key>
+        <Key ID="STR_FR4_Monitoring_endpoint_Description">
+            <English>Endpoint
+                Description</English>
+            <Polish>Endpoint Description</Polish>
+            <Italian>Endpoint Description</Italian>
+            <Russian>Endpoint
+                Description</Russian>
+            <French>Endpoint Description</French>
+            <Spanish>Endpoint Description</Spanish>
+            <German>Endpoint
+                Description</German>
+            <Hungarian>Endpoint Description</Hungarian>
+            <Czech>Endpoint Description</Czech>
+            <Portuguese>Endpoint
+                Description</Portuguese>
+            <Japanese>Endpoint Description</Japanese>
+            <Korean>Endpoint Description</Korean>
+            <Chinese>Endpoint
+                Description</Chinese>
+            <Chinesesimp>Endpoint Description</Chinesesimp>
+            <Turkish>Endpoint Description</Turkish>
+        </Key>
+        <Key ID="STR_FR4_Monitoring_port_DisplayName">
+            <English>
+                Port</English>
+            <Polish>Port</Polish>
+            <Italian>Port</Italian>
+            <Russian>Port</Russian>
+            <French>Port</French>
+            <Spanish>Port</Spanish>
+            <German>
+                Port</German>
+            <Hungarian>Port</Hungarian>
+            <Czech>Port</Czech>
+            <Portuguese>Port</Portuguese>
+            <Japanese>Port</Japanese>
+            <Korean>Port</Korean>
+            <Chinese>
+                Port</Chinese>
+            <Chinesesimp>Port</Chinesesimp>
+            <Turkish>Port</Turkish>
+        </Key>
+        <Key ID="STR_FR4_Monitoring_port_Description">
+            <English>Port Description</English>
+            <Polish>Port
+                Description</Polish>
+            <Italian>Port Description</Italian>
+            <Russian>Port Description</Russian>
+            <French>Port
+                Description</French>
+            <Spanish>Port Description</Spanish>
+            <German>Port Description</German>
+            <Hungarian>Port
+                Description</Hungarian>
+            <Czech>Port Description</Czech>
+            <Portuguese>Port Description</Portuguese>
+            <Japanese>Port
+                Description</Japanese>
+            <Korean>Port Description</Korean>
+            <Chinese>Port Description</Chinese>
+            <Chinesesimp>Port
+                Description</Chinesesimp>
+            <Turkish>Port Description</Turkish>
+        </Key>
+        <Key ID="STR_FR4_Monitoring_DisplayName">
+            <English>Monitoring</English>
+            <Polish>
+                Monitoring</Polish>
+            <Spanish>
+                Monitoring</Spanish>
+            <German>
+                Monitoring</German>
+            <Czech>Monitoring</Czech>
+            <Portuguese>Monitoring</Portuguese>
+            <French>Monitoring</French>
+            <Hungarian>
+                Monitoring</Hungarian>
+            <Russian>
+                Monitoring</Russian>
+            <Italian>Monitoring</Italian>
+            <Japanese>Monitoring</Japanese>
+            <Korean>Monitoring</Korean>
+            <Chinese>
+                Monitoring</Chinese>
+            <Chinesesimp>Monitoring</Chinesesimp>
+            <Turkish>Monitoring</Turkish>
+        </Key>
+    </Package>
+</Project>
