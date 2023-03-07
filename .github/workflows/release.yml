@@ -24,3 +24,4 @@ jobs:
             password: ${{ secrets.SFTP_PASSWORD }}
             localDir: "${{ steps.build.outputs.release_path }}/@${{ steps.build.outputs.mod_name }}"
             remoteDir: '/'
+            forceUpload: true
