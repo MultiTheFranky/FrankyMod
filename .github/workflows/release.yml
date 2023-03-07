@@ -5,8 +5,8 @@ on:
     types: [published]
 
 jobs:
-  upload-to-steam:
-    name: Upload to Steam Workshop
+  create-artifact:
+    name: Create Artifact
     if: ${{ !github.event.release.prerelease }} # Do not upload pre releases
     runs-on: windows-latest
     steps:
@@ -20,3 +20,12 @@ jobs:
           with:
             name: ${{ steps.build.outputs.zip_name }}
             path: ${{ steps.build.outputs.zip_path }}
+        - name: Add artifact to assets
+          uses: actions/upload-release-asset@v1
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            upload_url: ${{ github.event.release.upload_url }}
+            asset_path: ${{ steps.build.outputs.zip_path }}
+            asset_name: ${{ steps.build.outputs.zip_name }}
+            asset_content_type: application/zip
