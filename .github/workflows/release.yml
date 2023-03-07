@@ -15,12 +15,8 @@ jobs:
         - name: Build with HEMTT
           uses: gruppe-adler/action-release-with-hemtt@2.2.0
           id: build
-        - name: SFTP uploader
-          uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        - name: Upload Artifact
+          uses: actions/upload-artifact@v3
           with:
-            server: ${{ secrets.SFTP_HOST }}
-            port: ${{ secrets.SFTP_PORT }}
-            username: ${{ secrets.SFTP_USERNAME }}
-            password: ${{ secrets.SFTP_PASSWORD }}
-            local-dir: "${{ steps.build.outputs.release_path }}/@${{ steps.build.outputs.mod_name }}/"
-            protocol: ftps
+            name: ${{ steps.build.outputs.zip_name }}
+            path: ${{ steps.build.outputs.zip_path }}
