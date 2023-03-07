@@ -19,6 +19,7 @@ jobs:
           uses: wangyucode/sftp-upload-action@v2.0.2
           with:
             host: ${{ secrets.SFTP_HOST }}
+            port: ${{ secrets.SFTP_PORT }}
             username: ${{ secrets.SFTP_USERNAME }}
             password: ${{ secrets.SFTP_PASSWORD }}
             localDir: "${{ steps.build.outputs.release_path }}/@${{ steps.build.outputs.mod_name }}"
