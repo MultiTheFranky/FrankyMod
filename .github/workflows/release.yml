@@ -16,12 +16,11 @@ jobs:
           uses: gruppe-adler/action-release-with-hemtt@2.2.0
           id: build
         - name: SFTP uploader
-          uses: wangyucode/sftp-upload-action@v2.0.2
+          uses: SamKirkland/FTP-Deploy-Action@4.3.3
           with:
-            host: ${{ secrets.SFTP_HOST }}
+            server: ${{ secrets.SFTP_HOST }}
             port: ${{ secrets.SFTP_PORT }}
             username: ${{ secrets.SFTP_USERNAME }}
             password: ${{ secrets.SFTP_PASSWORD }}
-            localDir: "${{ steps.build.outputs.release_path }}/@${{ steps.build.outputs.mod_name }}"
+            local-dir: "${{ steps.build.outputs.release_path }}/@${{ steps.build.outputs.mod_name }}"
             remoteDir: '/'
-            forceUpload: true
