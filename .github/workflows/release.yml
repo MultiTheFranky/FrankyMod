@@ -23,3 +23,4 @@ jobs:
             username: ${{ secrets.SFTP_USERNAME }}
             password: ${{ secrets.SFTP_PASSWORD }}
             local-dir: "${{ steps.build.outputs.release_path }}/@${{ steps.build.outputs.mod_name }}/"
+            protocol: ftps
