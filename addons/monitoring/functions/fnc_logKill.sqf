@@ -25,9 +25,9 @@ if (!params [
 };
 
 // Add the data
-"prometheus" callExtension
+diag_log str("prometheus" callExtension
 ["data",
   [
     [format ["fr4_kill_%1", _killer], format ["Number of kills from %1", _killer], _kills] joinstring ":"
   ]
-];
+]);

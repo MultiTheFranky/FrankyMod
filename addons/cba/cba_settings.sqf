@@ -62,7 +62,7 @@ force force ace_casings_maxCasings = 250;
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 0;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "[]";
+force force ace_common_checkPBOsWhitelist = "['fr4_cba','fr4_common','fr4_main','fr4_monitoring']";
 force force ace_common_displayTextColor = [0,0,0,0.1];
 force force ace_common_displayTextFontColor = [1,1,1,1];
 ace_common_epilepsyFriendlyMode = false;
@@ -1099,3 +1099,8 @@ force force zen_faction_filter_3_LOP_TAK_Civ = true;
 force force zen_faction_filter_3_UK3CB_ADC_C = true;
 force force zen_faction_filter_3_UK3CB_CHC_C = true;
 force force zen_faction_filter_3_UK3CB_TKC_C = true;
+
+// FR4 Monitoring
+force force fr4_monitoring_enabled = true;
+force force fr4_monitoring_endpoint = "localhost";
+force force fr4_monitoring_port = "9092";

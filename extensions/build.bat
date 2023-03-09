@@ -5,9 +5,9 @@ set array=prometheus
 for %%i in (%array%) do (
     echo Building %%i
     cd %%i
-    dotnet publish /p:NativeLib=Shared /p:NativeDebugSymbols=false -r win-x64 -c Release
+    dotnet publish /p:NativeLib=Shared -r win-x64 -c Release
     rem use wls to build the linux so
-    wsl dotnet publish /p:NativeLib=Shared /p:NativeDebugSymbols=false -r linux-x64 -c Release
+    wsl dotnet publish /p:NativeLib=Shared -r linux-x64 -c Release
     cd ..
     echo Finished building %%i
 )

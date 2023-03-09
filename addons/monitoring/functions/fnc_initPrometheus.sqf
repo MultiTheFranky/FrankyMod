@@ -17,4 +17,4 @@
 
 if (!isServer) exitWith {};
 
-"prometheus" callExtension ["start", [GVAR(endpoint), GVAR(port)]];
+diag_log str("prometheus" callExtension ["start", [GVAR(endpoint), GVAR(port)]]);

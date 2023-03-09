@@ -31,6 +31,6 @@ private _dataToWrite = [
   [format ["fr4_%1_ind", _serverName], "Number of units ind", independent countSide allUnits] joinstring ":"
 ];
 
-"prometheus" callExtension ["data", _dataToWrite];
+diag_log str("prometheus" callExtension ["data", _dataToWrite]);
 
 [FUNC(prometheusLoop), [], 5] call CBA_fnc_waitAndExecute;
