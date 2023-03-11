@@ -1,6 +1,6 @@
 name: CI
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   validate:
@@ -22,14 +22,17 @@ jobs:
     - name: Lint (sqflint)
       uses: arma-actions/sqflint@master
       continue-on-error: true # No failure due to many false-positives
-  build:
-    name: build
-    runs-on: ubuntu-latest
+  hemtt:
+    name: Build with HEMTT
+    runs-on: windows-latest
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v2
-
+      uses: actions/checkout@v3
     - name: Build with HEMTT
+      uses: gruppe-adler/action-release-with-hemtt@2.2.0
       id: build
-      run: |
-        ./hemtt build
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: ${{ steps.build.outputs.zip_name }}
+        path: ${{ steps.build.outputs.release_path }}
