@@ -8,7 +8,7 @@ jobs:
   create-artifact:
     name: Create Artifact
     if: ${{ !github.event.release.prerelease }} # Do not upload pre releases
-    runs-on: [self-hosted, windows, X64]
+    runs-on: windows-latest
     steps:
         - name: Checkout repo
           uses: actions/checkout@v2
