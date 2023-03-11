@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   validate:
-    runs-on: [self-hosted, windows, X64]
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
       uses: actions/checkout@master
@@ -15,7 +15,7 @@ jobs:
     - name: Check for BOM
       uses: arma-actions/bom-check@master
   lint:
-    runs-on: [self-hosted, windows, X64]
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
       uses: actions/checkout@master
@@ -24,7 +24,7 @@ jobs:
       continue-on-error: true # No failure due to many false-positives
   build:
     name: build
-    runs-on: [self-hosted, windows, X64]
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
