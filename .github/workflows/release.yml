@@ -8,15 +8,20 @@ jobs:
   create-artifact:
     name: Create Artifact
     if: ${{ !github.event.release.prerelease }} # Do not upload pre releases
-    runs-on: windows-latest
+    runs-on: [self-hosted, windows, X64]
     steps:
         - name: Checkout repo
           uses: actions/checkout@v2
         - name: Build with HEMTT
           uses: gruppe-adler/action-release-with-hemtt@2.2.0
           id: build
-        - name: Upload Artifact
-          uses: actions/upload-artifact@v3
+        - name: Upload mod
+          uses: gruppe-adler/action-release-to-steam-ws@v1
           with:
-            name: ${{ steps.build.outputs.zip_name }}
-            path: ${{ steps.build.outputs.zip_path }}
+            file_id: 2939599650
+            username: "${{ secrets.STEAM_USERNAME }}"
+            password: "${{ secrets.STEAM_PASSWORD }}"
+            path: "${{ steps.build.outputs.release_path }}/@${{ steps.build.outputs.mod_name }}"
+            name: "${{ steps.build.outputs.mod_name }}"
+            change_notes_title: "${{ github.event.release.name }}"
+            change_notes: "${{ github.event.release.body }}"
