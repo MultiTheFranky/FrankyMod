@@ -35,6 +35,9 @@ jobs:
       uses: CyberAndrii/steam-totp@v1
       with:
         shared_secret: ${{ secrets.STEAM_SHARE_SECRET }}
+        
+    - name: Unzip builded mod
+      run: unzip -o ${{ steps.build.outputs.zip_path }} -d ${{ steps.build.outputs.release_path }}
 
     - name: Upload mod
       uses: MultiTheFranky/action-release-to-steam-ws@0.0.2
