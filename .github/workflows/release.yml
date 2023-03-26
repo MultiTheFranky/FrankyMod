@@ -43,7 +43,7 @@ jobs:
     - name: Upload mod
       uses: MultiTheFranky/action-release-to-steam-ws@0.0.1
       with:
-        steamcmd_path: ${{ steps.steamcmd.outputs.executable }}
+        steamcmd_path: ${{ steps.steamcmd.outputs.directory }}
         file_id: '2945336678'
         username: "${{ secrets.STEAM_USERNAME }}"
         password: "${{ secrets.STEAM_PASSWORD }}"
