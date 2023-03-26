@@ -44,7 +44,7 @@ jobs:
         file_id: '2945336678'
         username: "${{ secrets.STEAM_USERNAME }}"
         password: "${{ secrets.STEAM_PASSWORD }}"
-        path: "${{ steps.build.outputs.zip_path }}"
+        path: "${{ steps.build.outputs.release_path }}/@${{ steps.build.outputs.mod_name }}"
         name: "${{ steps.build.outputs.mod_name }}"
         change_notes_title: "${{ github.event.release.name }}"
         change_notes: "${{ github.event.release.body }}"
