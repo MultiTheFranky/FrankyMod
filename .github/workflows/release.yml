@@ -24,6 +24,7 @@ jobs:
         upload_url: ${{ github.event.release.upload_url }}
         asset_path: ${{ steps.build.outputs.zip_path }}
         asset_content_type: application/zip
+      continue-on-error: true
     - name: Setup steamcmd
       id: steamcmd
       uses: CyberAndrii/setup-steamcmd@v1
