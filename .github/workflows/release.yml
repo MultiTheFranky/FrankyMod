@@ -15,8 +15,8 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
-    - name: Build with HEMTT
-      uses: gruppe-adler/action-release-with-hemtt@2.2.0
+    - name: Release with HEMTT - MultiTheFranky
+      uses: MultiTheFranky/action-release-with-hemtt@0.0.5
       id: build
     - name: Upload asset
       uses: shogo82148/actions-upload-release-asset@v1
@@ -24,3 +24,24 @@ jobs:
         upload_url: ${{ github.event.release.upload_url }}
         asset_path: ${{ steps.build.outputs.zip_path }}
         asset_content_type: application/zip
+    - name: Setup steamcmd
+      id: steamcmd
+      uses: CyberAndrii/setup-steamcmd@v1
+
+    - name: Copy config
+      run: mv -v config.vdf ${{ steps.steamcmd.outputs.directory }}/config/config.vdf
+      
+    - name: Copy sentry file
+      run: mv -v ssfn* ${{ steps.steamcmd.outputs.directory }}
+
+    - name: Upload mod
+      uses: MultiTheFranky/action-release-to-steam-ws@0.0.1
+      with:
+        steamcmd_path: ${{ steps.steamcmd.outputs.executable }}
+        file_id: '2945336678'
+        username: "${{ secrets.STEAM_USERNAME }}"
+        password: "${{ secrets.STEAM_PASSWORD }}"
+        path: "${{ steps.build.outputs.zip_path }}"
+        name: "${{ steps.build.outputs.mod_name }}"
+        change_notes_title: "${{ github.event.release.name }}"
+        change_notes: "${{ github.event.release.body }}"

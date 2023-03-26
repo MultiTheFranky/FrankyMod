@@ -15,4 +15,5 @@
 */
 
 private _text = ((toLower _this) splitString "-");
+if (count _text == 0) exitWith {""};
 ((_text select ((count _text) - 1)) splitString (toString [32, 9, 13, 10]) joinString "")
