@@ -37,6 +37,9 @@ jobs:
     - name: Copy sentry file
       run: mv -v ssfn* ${{ steps.steamcmd.outputs.directory }}
 
+    - name: Unzip builded mod
+      run: unzip -o ${{ steps.build.outputs.zip_path }} -d ${{ steps.build.outputs.release_path }}
+
     - name: Upload mod
       uses: MultiTheFranky/action-release-to-steam-ws@0.0.1
       with:
