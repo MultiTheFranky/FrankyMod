@@ -30,7 +30,7 @@ jobs:
       uses: actions/cache@v3
       id: cache-steamcmd
       with:
-        path: ${{ steps.steamcmd.outputs.directory }}
+        path: "/opt/hostedtoolcache/steamcmd/latest/i386"
         key: ${{ runner.os }}-steamcmd-${{ hashFiles('steamcmd.sh') }}
         restore-keys: |
           ${{ runner.os }}-steamcmd-
