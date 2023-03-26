@@ -26,31 +26,15 @@ jobs:
         asset_content_type: application/zip
       continue-on-error: true
 
-    - name: Load SteamCMD
-      uses: actions/cache@v3
-      id: cache-steamcmd
-      with:
-        path: "/opt/hostedtoolcache/steamcmd/latest/i386"
-        key: ${{ runner.os }}-steamcmd-${{ hashFiles('steamcmd.sh') }}
-        restore-keys: |
-          ${{ runner.os }}-steamcmd-
-
-    - if: ${{ steps.cache-steamcmd.outputs.cache-hit != 'true' }} 
-      name: Setup steamcmd
+    - name: Setup steamcmd
       id: steamcmd
       uses: CyberAndrii/setup-steamcmd@v1
 
-    - name: Create config folder
-      run: mkdir -p ${{ steps.steamcmd.outputs.directory }}/config
-
-    - name: Copy config
-      run: mv -v config.vdf ${{ steps.steamcmd.outputs.directory }}/config/config.vdf && chmod 777 ${{ steps.steamcmd.outputs.directory }}/config/config.vdf
-      
-    - name: Copy sentry file
-      run: mv -v ssfn* ${{ steps.steamcmd.outputs.directory }} && chmod 777 ${{ steps.steamcmd.outputs.directory }}/ssfn*
-
-    - name: Unzip builded mod
-      run: unzip -o ${{ steps.build.outputs.zip_path }} -d ${{ steps.build.outputs.release_path }}
+    - name: Generate auth code
+      id: generate
+      uses: CyberAndrii/steam-totp@v1
+      with:
+        shared_secret: ${{ secrets.STEAM_SHARE_SECRET }}
 
     - name: Upload mod
       uses: MultiTheFranky/action-release-to-steam-ws@0.0.2
@@ -59,15 +43,8 @@ jobs:
         file_id: '2945336678'
         username: "${{ secrets.STEAM_USERNAME }}"
         password: "${{ secrets.STEAM_PASSWORD }}"
-        otp: "${{ secrets.STEAM_OTP }}"
+        otp: "${{ steps.generate.outputs.code }}"
         path: "${{ steps.build.outputs.release_path }}/@${{ steps.build.outputs.mod_name }}"
         name: "${{ steps.build.outputs.mod_name }}"
         change_notes_title: "${{ github.event.release.name }}"
         change_notes: "${{ github.event.release.body }}"
-    - name: Cache SteamCMD
-      uses: actions/cache@v2
-      with:
-        path: ${{ steps.steamcmd.outputs.directory }}
-        key: ${{ runner.os }}-steamcmd-${{ hashFiles('steamcmd.sh') }}
-        restore-keys: |
-          ${{ runner.os }}-steamcmd-
