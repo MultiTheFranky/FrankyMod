@@ -41,7 +41,7 @@ jobs:
       run: unzip -o ${{ steps.build.outputs.zip_path }} -d ${{ steps.build.outputs.release_path }}
 
     - name: Upload mod
-      uses: MultiTheFranky/action-release-to-steam-ws@0.0.1
+      uses: MultiTheFranky/action-release-to-steam-ws@0.0.2
       with:
         steamcmd_path: ${{ steps.steamcmd.outputs.directory }}
         file_id: '2945336678'
