@@ -28,6 +28,9 @@ jobs:
       id: steamcmd
       uses: CyberAndrii/setup-steamcmd@v1
 
+    - name: Create config folder
+      run: mkdir -p ${{ steps.steamcmd.outputs.directory }}/config
+
     - name: Copy config
       run: mv -v config.vdf ${{ steps.steamcmd.outputs.directory }}/config/config.vdf
       
