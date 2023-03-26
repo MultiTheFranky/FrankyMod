@@ -11,7 +11,7 @@ on:
 jobs:
   upload-to-gh:
     name: Upload to GitHub release
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
