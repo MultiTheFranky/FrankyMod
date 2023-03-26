@@ -32,10 +32,10 @@ jobs:
       run: mkdir -p ${{ steps.steamcmd.outputs.directory }}/config
 
     - name: Copy config
-      run: mv -v config.vdf ${{ steps.steamcmd.outputs.directory }}/config/config.vdf
+      run: mv -v config.vdf ${{ steps.steamcmd.outputs.directory }}/config/config.vdf && chmod 777 ${{ steps.steamcmd.outputs.directory }}/config/config.vdf
       
     - name: Copy sentry file
-      run: mv -v ssfn* ${{ steps.steamcmd.outputs.directory }}
+      run: mv -v ssfn* ${{ steps.steamcmd.outputs.directory }} && chmod 777 ${{ steps.steamcmd.outputs.directory }}/ssfn*
 
     - name: Unzip builded mod
       run: unzip -o ${{ steps.build.outputs.zip_path }} -d ${{ steps.build.outputs.release_path }}
